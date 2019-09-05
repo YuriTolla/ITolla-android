@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity">
+
+    <ImageView
+        android:id="@+id/imagemPerfilUsuario"
+        android:layout_width="147dp"
+        android:layout_height="136dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textNomeUsuario"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Nome do Usuário"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toEndOf="@+id/imagemPerfilUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/botaoPerfilVoltarHome" />
+
+    <EditText
+        android:id="@+id/inputPerfilEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Email: (Obrigatório)"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemPerfilUsuario" />
+
+    <EditText
+        android:id="@+id/inputPerfilWhat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Whats: (Opcional)"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPerfilEmail" />
+
+    <EditText
+        android:id="@+id/inputPerfilFace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Facebook: (Opcional)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPerfilWhat" />
+
+    <Button
+        android:id="@+id/botaoPerfilAnunciarProduto"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Anunciar Produto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPerfilFace" />
+
+    <Button
+        android:id="@+id/botaoPerfilLista"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Minha Lista de Produtos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botaoPerfilAnunciarProduto"
+        app:layout_constraintTop_toBottomOf="@+id/inputPerfilFace" />
+
+    <Button
+        android:id="@+id/botaoPerfilVoltarHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoPerfilSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toStartOf="@+id/botaoPerfilVoltarHome"
+        app:layout_constraintStart_toEndOf="@+id/imagemPerfilUsuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
